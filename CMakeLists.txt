@@ -103,7 +103,8 @@ if (SPIRV_CROSS_FORCE_STL_TYPES)
 endif()
 
 if (WIN32)
-	set(CMAKE_DEBUG_POSTFIX "d")
+	#rbfx: Disable debug postfix
+	#set(CMAKE_DEBUG_POSTFIX "d")
 endif()
 
 if (CMAKE_COMPILER_IS_GNUCXX OR ((${CMAKE_CXX_COMPILER_ID} MATCHES "Clang") AND NOT MSVC))
